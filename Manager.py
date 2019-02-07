@@ -34,5 +34,6 @@ class Manager(object):
             add = Manager()
             add.add_tasks()
 
-# text = Manager()
-# text.print_tasks()
+        if choice == 'view':
+            text = Manager()
+            text.print_tasks()
