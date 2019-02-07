@@ -7,4 +7,4 @@ import datetime
 import Manager
 import Item
 
-go = Manager.Manager()
+go = Manager.Manager.start()

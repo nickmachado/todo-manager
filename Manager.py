@@ -16,7 +16,23 @@ class Manager(object):
 
     def add_tasks(self):
         target = open("todos.txt", 'a')
-        add =  target.write(input("> "))
+        add =  target.write(input("""Add a task
+> """)+ "\n")
 
-text = Manager()
-text.print_tasks()
+
+    def start():
+        print("""Welcome to your to task manager!
+        What would you like to do today?
+
+        1. "view" your tasks
+        2. "add" a task
+        3. "complete" a task""")
+
+        choice = input("> ")
+
+        if choice == 'add':
+            add = Manager()
+            add.add_tasks()
+
+# text = Manager()
+# text.print_tasks()
